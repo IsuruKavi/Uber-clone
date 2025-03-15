@@ -12,8 +12,13 @@ import { screenHeight, screenWidth } from "../GlobalStyle";
 import NavOptionts from "../components/NavOptions";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { Icon } from "@rneui/base";
+import { useDispatch } from "react-redux";
+import { setDestination, setOrigin } from "../slices/navSlice";
 const GooglePlacesInput = () => {
   const ref = useRef();
+   const dispatch=useDispatch();
+   
+  
   return (
     <>
       {/* <TouchableOpacity onPress={() => ref.current?.clear()}>
@@ -26,6 +31,21 @@ const GooglePlacesInput = () => {
         />
       </TouchableOpacity> */}
       <GooglePlacesAutocomplete
+        renderRightButton={() => (
+          <TouchableOpacity
+            onPress={() => {
+              ref.current?.setAddressText("");
+            }}
+          >
+            <Icon
+              style={[tw``, { paddingRight:6}]}
+              name="closecircle"
+              color="gray"
+              type="antdesign"
+              size={screenWidth * 0.05}
+            />
+          </TouchableOpacity>
+        )}
         enablePoweredByContainer={false}
         minLength={2}
         returnKeyType={"Search"}
@@ -34,17 +54,30 @@ const GooglePlacesInput = () => {
         styles={{
           container: {
             flex: 0,
+            alignItems: "center",
+          },
+       
+          textInputContainer: {
+            borderColor: "#ebbe42",
+            borderWidth: 1,
+            alignItems: "center",
+            borderRadius: 10,
+            marginBottom:10
           },
           textInput: {
-            height: 38,
-            color: "#5d5d5d",
-            fontSize: 16,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 10,
+            marginBottom: 0,
           },
         }}
         placeholder="Enter location"
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
-          console.log(data, details);
+          dispatch(setOrigin({location:details.geometry.location,
+            description:data.description
+          }))
+          dispatch(setDestination(null))
         }}
         query={{
           key: process.env.GOOGLE_MAP_API_KEY,
