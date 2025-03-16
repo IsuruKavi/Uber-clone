@@ -4,6 +4,8 @@ import { screenHeight, screenWidth } from "../GlobalStyle";
 import tw from "twrnc";
 import { Icon } from "@rneui/themed";
 import { useNavigation } from "@react-navigation/native";
+import { useSelector } from "react-redux";
+import { selectOrigin } from "../slices/navSlice";
 const data = [
   {
     id: "123",
@@ -46,6 +48,7 @@ const NavItem = ({ item }) => {
 };
 const NavOptionts = () => {
   const navigation = useNavigation();
+  const origin=useSelector(selectOrigin)
   return (
     <View>
       <FlatList
@@ -57,6 +60,8 @@ const NavOptionts = () => {
             onPress={() => {
               navigation.navigate(item.screen);
             }}
+            disabled={!origin}
+            style={tw`${!origin && "opacity-40" }`}
           >
             <NavItem item={item} />
           </TouchableOpacity>

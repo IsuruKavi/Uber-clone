@@ -21,15 +21,7 @@ const GooglePlacesInput = () => {
   
   return (
     <>
-      {/* <TouchableOpacity onPress={() => ref.current?.clear()}>
-        <Icon
-          style={[tw``]}
-          name="closecircle"
-          color="gray"
-          type="antdesign"
-          size={screenWidth * 0.04}
-        />
-      </TouchableOpacity> */}
+     
       <GooglePlacesAutocomplete
         renderRightButton={() => (
           <TouchableOpacity
