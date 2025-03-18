@@ -14,14 +14,13 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { Icon } from "@rneui/base";
 import { useDispatch } from "react-redux";
 import { setDestination, setOrigin } from "../slices/navSlice";
+import NavFavourite from "../components/NavFavourite";
 const GooglePlacesInput = () => {
   const ref = useRef();
-   const dispatch=useDispatch();
-   
-  
+  const dispatch = useDispatch();
+
   return (
     <>
-     
       <GooglePlacesAutocomplete
         renderRightButton={() => (
           <TouchableOpacity
@@ -30,7 +29,7 @@ const GooglePlacesInput = () => {
             }}
           >
             <Icon
-              style={[tw``, { paddingRight:6}]}
+              style={[tw``, { paddingRight: 6 }]}
               name="closecircle"
               color="gray"
               type="antdesign"
@@ -48,13 +47,13 @@ const GooglePlacesInput = () => {
             flex: 0,
             alignItems: "center",
           },
-       
+
           textInputContainer: {
             borderColor: "#ebbe42",
             borderWidth: 1,
             alignItems: "center",
             borderRadius: 10,
-            marginBottom:10
+            marginBottom: 10,
           },
           textInput: {
             alignItems: "center",
@@ -66,10 +65,13 @@ const GooglePlacesInput = () => {
         placeholder="Enter location"
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
-          dispatch(setOrigin({location:details.geometry.location,
-            description:data.description
-          }))
-          dispatch(setDestination(null))
+          dispatch(
+            setOrigin({
+              location: details.geometry.location,
+              description: data.description,
+            })
+          );
+          dispatch(setDestination(null));
         }}
         query={{
           key: process.env.GOOGLE_MAP_API_KEY,
@@ -96,6 +98,7 @@ const HomeScreen = () => {
           <GooglePlacesInput />
         </View>
         <NavOptionts />
+        <NavFavourite />
       </View>
     </SafeAreaView>
   );

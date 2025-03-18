@@ -1,138 +1,284 @@
 {
-    "address_components": [
-        {
-            "long_name": "Senegal",
-            "short_name": "SN",
-            "types": [Array
-            ]
-        }
+    "_onChange": [Function bound _onChange
     ],
-    "adr_address": "<span class=\"country-name\">Senegal</span>",
-    "formatted_address": "Senegal",
-    "geometry": {
-        "location": {
-            "lat": 14.497401,
-            "lng": -14.452362
-        },
-        "viewport": {
-            "northeast": [Object
+    "_onMapReady": [Function bound _onMapReady
+    ],
+    "_reactInternalInstance": {},
+    "_reactInternals": {
+        "_debugHookTypes": null,
+        "_debugInfo": null,
+        "_debugNeedsRemount": false,
+        "_debugOwner": {
+            "_debugHookTypes": [Array
             ],
-            "southwest": [Object
+            "_debugInfo": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "actualDuration": 3.932580888271332,
+            "actualStartTime": 436426666.377456,
+            "alternate": [FiberNode
+            ],
+            "child": [Circular
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": [Object
+            ],
+            "elementType": [Function Map
+            ],
+            "flags": 8407041,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": [Object
+            ],
+            "mode": 3,
+            "pendingProps": [Object
+            ],
+            "ref": null,
+            "refCleanup": null,
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 1.2544999718666077,
+            "sibling": null,
+            "stateNode": null,
+            "subtreeFlags": 10487809,
+            "tag": 0,
+            "treeBaseDuration": 3.340885877609253,
+            "type": [Function Map
+            ],
+            "updateQueue": [Object
+            ]
+        },
+        "actualDuration": 2.669811964035034,
+        "actualStartTime": 436426667.645918,
+        "alternate": {
+            "_debugHookTypes": null,
+            "_debugInfo": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "actualDuration": 29.768229961395264,
+            "actualStartTime": 436380209.382335,
+            "alternate": [Circular
+            ],
+            "child": [FiberNode
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": null,
+            "elementType": [Function MapView
+            ],
+            "flags": 2097152,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": [Object
+            ],
+            "mode": 3,
+            "pendingProps": [Object
+            ],
+            "ref": [Object
+            ],
+            "refCleanup": null,
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 0.34403902292251587,
+            "sibling": null,
+            "stateNode": [Circular
+            ],
+            "subtreeFlags": 10487809,
+            "tag": 1,
+            "treeBaseDuration": 1.5465390086174011,
+            "type": [Function MapView
+            ],
+            "updateQueue": [Object
+            ]
+        },
+        "child": {
+            "_debugHookTypes": null,
+            "_debugInfo": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [Circular
+            ],
+            "actualDuration": 2.207465946674347,
+            "actualStartTime": 436426668.114264,
+            "alternate": [FiberNode
+            ],
+            "child": [FiberNode
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": null,
+            "elementType": [Object
+            ],
+            "flags": 0,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": null,
+            "mode": 3,
+            "pendingProps": [Object
+            ],
+            "ref": null,
+            "refCleanup": null,
+            "return": [Circular
+            ],
+            "selfBaseDuration": 0.046845972537994385,
+            "sibling": null,
+            "stateNode": null,
+            "subtreeFlags": 10487809,
+            "tag": 10,
+            "treeBaseDuration": 1.632231891155243,
+            "type": [Object
+            ],
+            "updateQueue": null
+        },
+        "childLanes": 0,
+        "deletions": null,
+        "dependencies": null,
+        "elementType": [Function MapView
+        ],
+        "flags": 2097153,
+        "index": 0,
+        "key": null,
+        "lanes": 0,
+        "memoizedProps": {
+            "children": [Array
+            ],
+            "initialRegion": [Object
+            ],
+            "mapType": "standard",
+            "style": [Object
+            ]
+        },
+        "memoizedState": {
+            "isReady": true
+        },
+        "mode": 3,
+        "pendingProps": {
+            "children": [Array
+            ],
+            "initialRegion": [Object
+            ],
+            "mapType": "standard",
+            "style": [Object
+            ]
+        },
+        "ref": {
+            "current": [Circular
+            ]
+        },
+        "refCleanup": null,
+        "return": {
+            "_debugHookTypes": [Array
+            ],
+            "_debugInfo": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "actualDuration": 3.932580888271332,
+            "actualStartTime": 436426666.377456,
+            "alternate": [FiberNode
+            ],
+            "child": [Circular
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": [Object
+            ],
+            "elementType": [Function Map
+            ],
+            "flags": 8407041,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": [Object
+            ],
+            "mode": 3,
+            "pendingProps": [Object
+            ],
+            "ref": null,
+            "refCleanup": null,
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 1.2544999718666077,
+            "sibling": null,
+            "stateNode": null,
+            "subtreeFlags": 10487809,
+            "tag": 0,
+            "treeBaseDuration": 3.340885877609253,
+            "type": [Function Map
+            ],
+            "updateQueue": [Object
+            ]
+        },
+        "selfBaseDuration": 0.45415401458740234,
+        "sibling": null,
+        "stateNode": [Circular
+        ],
+        "subtreeFlags": 10487809,
+        "tag": 1,
+        "treeBaseDuration": 2.0863859057426453,
+        "type": [Function MapView
+        ],
+        "updateQueue": {
+            "baseState": [Object
+            ],
+            "callbacks": null,
+            "firstBaseUpdate": null,
+            "lastBaseUpdate": null,
+            "shared": [Object
             ]
         }
     },
-    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
-    "icon_background_color": "#7B9EB0",
-    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    "name": "Senegal",
-    "photos": [
-        {
-            "height": 799,
-            "html_attributions": [Array
+    "context": {},
+    "map": {
+        "current": {
+            "__internalInstanceHandle": [FiberNode
             ],
-            "photo_reference": "AUy1YQ338rUVLmhSia4V1Hkt8gHspRL0S81h2L58aQtZdxGkt1958Xdygn0IwSFYVGK7PJ5_ZzO8vtKwbgCOirjF3wfI_QAceAnWfDGeM49gtfAg2mbBk4H9AhowVxBq3pe62j_RfgEuIHHQSjBmldAO9vHAGgpucr4bV19pRSL3JjiU1XuGSHET9k-HUFzryiIpYmH1F6-vr8-vEubsvf7siwzitdaxCWVHNVG_kw7iH0gDMbg-W_5i0-Lxz52mx70AFW2jnMJmXC29-IWKqrm5pyWEA3mPactETmhVwfdJ7-DY-g4cyvTiCGy4arE_XjHFs7E-5ts4G9g",
-            "width": 1200
-        },
-        {
-            "height": 1640,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ3pk1jgY_sX39MtzJIJ2N6M549-ZzfEuvoNqTo945v_kLyw-HN8keq264k5sD4_Ipvkc3Ztp7YMhmCOKJAH_TBElxWbW-HbZdbV-yXpzSOjkPEU7VjatUtoVQ_AWcD3HKuhaDk7cmQi7mpHu7IsNAXru3shou_yqtpxRoImx1o4ZxMy0-FpykrLcZ4KQbDU6gDxNyGuZYbj7NE96Gq57Xa898w_P02ehFN8IKZVn-tud50vlrisi6sMHbh1RFchLsDC80k90GbgJtEmJkDDOuyeMNsnTWAVIi2s8L0NsaecGb0znatI9SWkrW4ULyKtAMgf9cEt",
-            "width": 8446
-        },
-        {
-            "height": 720,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ298bO_5Mzvna-hB2Aun-7uvVj94fm8oZ3IAuug8MwsSCdSSYu3wbrP-uS4dAWWWYSvfZqp_z3DDa0Hbe16z4OlczzRyevXZJEjpE83Xfte9zAhkXFnql4PqATHrcCIfKS6sfyhJpeVT3R-L8k9jkGwJk9ABczQpfvDoYZvVBEmh2OrBIWQRaGzYCEGgy03OsF4jrtTfrre5RvhCKyJ7-ZrHzBpoQhByzriZfOyx3Zd0DOQTayOduggBL_KqDHoZ7hx62SRkFJJdZH4wWj8Ji2r_AJII9eUq9n9yQqW8yDpE9LgerAEEEtuTZ_Rv0Z5u0slLlz5t_k",
-            "width": 720
-        },
-        {
-            "height": 540,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ3NsD0k47h2HgSm4iY8UEzvvI1k4iGzogBd_qkv9OWAAdNIcJknBq2mwSdEnq9Ot5yDxZGgsp_bs8BETbBdwpP9K9pmWM119-echlDDmkQGk90kP6_SUx64MeJGEw5JQQDSN0w0zO3HHGpHKU5vozB6uZESfZ-GOZqe2CYSIR7g3Gkb0Az79AC6bjFIJS6E87dalX_sTUrX-qcofaC5Pp9XsiL_zRrFVpUVotssXU66G9Bstaw54hyyQO-oK_RgfOy4frNLPz7s4zsW31bIHwE_N-uXw8yC2CUxG0CMOrpmOBEakCgldMAcFfKAtZYjnJAlnz0g",
-            "width": 720
-        },
-        {
-            "height": 300,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ0hUzo90aG8AWgjVsiu-acESmAJSQclMKJWlh6bPYWyrhFyseGuY_uMpRLe-xO-3_EEp_6pJIRgyMQxzU1OOyUM15oGatWqbH-m8j1FULXvWXYz8kRkOD24VCArQGJyrvHaodeXCLLUGCHcLmgOQda7021BWNuEBZDumpXt-7t7OWR2m3n4P7eOXYONe8BAcQKDz7HxX8CIjhurRKUCxOhUxJzYp9TtfK7-x0B-D9ZZ5d8w7IiwQV73xob2bWbMTRGIhQ1l3Vi1a1vhxEJXgJJZ44sK78u0APKwGRrPEvXkzZH96ipwMDfo6faLIi_t9NU1nPrOt4Y",
-            "width": 450
-        },
-        {
-            "height": 339,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ27sfcqkvJWYhkuLatukjgHNEaFQMujk_EU4_1vy-EhDIgwMOtRWRzFNxVbitUl7NPRqs5fQsrhlVgDDi_vBwSIaHGTzyWsJePAz3K-UZboaTKxqsCE2jD3E_QjCbGJd5wPmLk_caVlMCf78_4aiForKA-30QzGLW1raBGtoINkVSWxZu9M9dGLBR4op5BDFPXuPy3m4f1uQtiChNa30mTuY-s1BZfJpk_0eukuUQwOaF9a3ZDzFQ5fCnDv2yUOFxNZRYW5x50AVhPDMNU9BX0F3HqGZkubUVLnHTWRxyyblHifrCi_SxhJGSGPGw4NhunIvSr93vE",
-            "width": 736
-        },
-        {
-            "height": 602,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ2Z591IG7CfPl8a3nLUiTuwUWsvOZaHMEbJxo_KK-288TMKzGSNtbVA8hldkte2c672NihNFOIbkCmpVu5tCcyVRQ2mq6t7c0KKcBNUI-uNGY5wKoNpuTnpsxet6w5oe8I8_Tc7cS41fqzDZdT-wHxyV8CZF_dAF_26u-vrvYtto-d8IlUcb2Epp31oDQJitrh-Gt2QTW8TQd2NhHhy-h1vJbd-JGyETvT_0SjQ0QNqJc1V8IdqaN_AHtujQc9KmR49GrJYTaSBeviT9NFFwo2sI7I-CczinOFCgRm-stJqADvsx4Flmuz7feME3b5Sb_XdekhPCmY",
-            "width": 960
-        },
-        {
-            "height": 1960,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ0Dfbtwx0ldjg5OwFItw9r0eNT_hX59RPHLj3y-_7SxEzF70Z98i4Df-k8HoQmk90D8Ne4pjTe6AGOaxNZSYsQODQ3KnOdf3yFjHVNE9TT1uWw5kZBWogGF6TEGtjr1IIR7yHnkvpx4ojZ-pDAiuC_VaWFWRJAhLey1kFJgDAevC9tv428-OKa_WjNRgA55lucUBPYDKthPx46BnZvQqs-iqB4uj15kgtggfowksDWp6_YokrnwCnIIgDcBgeQSNE3VsBN0dshX99oJSOfwPn3rtzME8qKiOaOmEJnWd5wAKsGP1tqg88DR27pWb5ZRepyk4bofud4",
-            "width": 4032
-        },
-        {
-            "height": 3024,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ0QS1ha5xco711Y7zloI4nQpdqw42UD3VFgHEWSuXJ7gmYM3PbM00ppVQ5cI6bvmCeXZn1CsYHKOBf1WhHYTlXkTNNakMCuMP_EepWyamEmab--DgOxo5BZ3Ax-K0hWXaimEnPWl1_J0c35w5zPNA1NNwg4qGo1tuJHTrak6eUpgbGARVURupZWeqjX5CiXLDfYRci3vr1BBhnCXO4LnIYdTwua7TsuC_Dx00NwsoyE1rio6tnnLGMOTzaHtOICM5UKonfOwHvglUqufIv1C_rGJVhAkH3ByiBzCzNTCjMwi7RzzojyXCmVnf9B6hmnLw_20NkL",
-            "width": 4032
-        },
-        {
-            "height": 3264,
-            "html_attributions": [Array
-            ],
-            "photo_reference": "AUy1YQ1gj3y1dMqgb1z3zsZfaoaHQb5ESuN5fbw7CKvoOpphVIvDm0AaDeTm41M62tb6gyTiYkyEOrW-K5AiOt1EbGWJkJCfNwoW-AUGQsen955XSkKRSOZ5HCq2osUmF6KGxSwnP_tXN654e5OL-yzTJvZMexmz-4BtfcxS4eMCB9YcYqeB6eq7C6t0Bvc2n2NeJcVPvvy1FfTX45_n0k1LnI83dhCUFitocuAThd4mUIS6WV3YKzQS9WVdnzL6s9L5f8ZQybUwKA2pVSbEuWYTlOE533I-MQ0yNxADyLFdEyb_W8erlO__JcQT7VBvSIVJhnP9Nhrq_HI",
-            "width": 2448
-        }
-    ],
-    "place_id": "ChIJcbvFs_VywQ4RQFlhmVClRlo",
-    "reference": "ChIJcbvFs_VywQ4RQFlhmVClRlo",
-    "types": [
-        "country",
-        "political"
-    ],
-    "url": "https://maps.google.com/?q=Senegal&ftid=0xec172f5b3c5bb71:0x5a46a55099615940",
-    "utc_offset": 0,
-    "website": "http://www.gouv.sn/"
-}
-{
-    "description": "Sri Lanka",
-    "matched_substrings": [
-        {
-            "length": 2,
-            "offset": 0
-        }
-    ],
-    "place_id": "ChIJnR5a9jxZ4joRjNPiALSkPeE",
-    "reference": "ChIJnR5a9jxZ4joRjNPiALSkPeE",
-    "structured_formatting": {
-        "main_text": "Sri Lanka",
-        "main_text_matched_substrings": [
-            [Object
+            "__nativeTag": 1368,
+            "_viewConfig": [Object
             ]
+        }
+    },
+    "props": {
+        "children": [<MapMarker … />, <MapMarker … />, <MapViewRoute … />
+        ],
+        "initialRegion": {
+            "latitude": 6.993400899999999,
+            "latitudeDelta": 0.005,
+            "longitude": 81.0549815,
+            "longitudeDelta": 0.005
+        },
+        "mapType": "standard",
+        "style": {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1
+        }
+    },
+    "refs": {},
+    "state": {
+        "isReady": true
+    },
+    "updater": {
+        "enqueueForceUpdate": [Function enqueueForceUpdate
+        ],
+        "enqueueReplaceState": [Function enqueueReplaceState
+        ],
+        "enqueueSetState": [Function enqueueSetState
+        ],
+        "isMounted": [Function isMounted
         ]
-    },
-    "terms": [
-        {
-            "offset": 0,
-            "value": "Sri Lanka"
-        }
-    ],
-    "types": [
-        "political",
-        "geocode",
-        "country"
-    ]
+    }
 }
