@@ -1,5 +1,5 @@
 {
-    "files.autoSave": "onWindowChange",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+  "files.autoSave": "off",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }

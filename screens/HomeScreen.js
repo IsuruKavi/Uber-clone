@@ -65,6 +65,7 @@ const GooglePlacesInput = () => {
         placeholder="Enter location"
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
+          console.log(data, details);
           dispatch(
             setOrigin({
               location: details.geometry.location,
@@ -98,7 +99,8 @@ const HomeScreen = () => {
           <GooglePlacesInput />
         </View>
         <NavOptionts />
-        <NavFavourite />
+        <View style={{ marginTop: 20 }} />
+        <NavFavourite place="origin" />
       </View>
     </SafeAreaView>
   );

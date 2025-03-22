@@ -25,8 +25,7 @@ const BottomScreen = () => {
 };
 const MapScreen = () => {
   return (
-    <View style={tw`flex-1 bg-white`}>
-  
+    <View style={tw`flex-1 bg-white bg-blue-300 h-full`}>
       <View style={tw` flex-0.5 `}>
         <Map />
       </View>

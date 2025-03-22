@@ -8,18 +8,18 @@ import { Icon } from "@rneui/themed";
 import { screenHeight, screenWidth } from "../GlobalStyle";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/native";
+import NavFavourite from "./NavFavourite";
+import BottomSection from "./BottomSection";
 const NavigateCard = () => {
   const ref = useRef();
   const dispatch = useDispatch();
-  const navigation=useNavigation()
+  const navigation = useNavigation();
   return (
-    <View style={tw`flex-1`}>
+    <View style={tw`flex-1 bg-white  `}>
       <Text style={tw`text-center text-lg font-semibold py-5`}>
         Good Morning, Tom
       </Text>
-      <View
-        style={tw`border-t border-gray-200 flex-shrink  flex-shrink px-3`}
-      >
+      <View style={tw`border-t border-gray-100 flex-shrink  flex-shrink px-3`}>
         <GooglePlacesAutocomplete
           renderRightButton={() => (
             <TouchableOpacity
@@ -59,7 +59,7 @@ const NavigateCard = () => {
               borderRadius: 10,
               backgroundColor: "#d4d4d4",
               marginBottom: 0,
-            color:'black' 
+              color: "black",
             },
           }}
           placeholder="Enter location"
@@ -71,14 +71,16 @@ const NavigateCard = () => {
                 description: data.description,
               })
             );
-             navigation.navigate('RiderOptionCard')
+            navigation.navigate("RiderOptionCard");
           }}
           query={{
             key: process.env.GOOGLE_MAP_API_KEY,
             language: "en",
           }}
         />
+        <NavFavourite place="destination" />
       </View>
+      <BottomSection />
     </View>
   );
 };
