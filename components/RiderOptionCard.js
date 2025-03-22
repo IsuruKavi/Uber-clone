@@ -41,7 +41,7 @@ const RiderOptionCard = () => {
   const calculatePrice = (item) => {
     // Calculate price without formatting
     const price =
-      (travelTimeInformation?.distanceMeters * item.multiplier) / 12;
+      (travelTimeInformation?.distanceMeters * item.multiplier) / 16;
 
     // Round up the price value
     const roundedUp = Math.ceil(price); // Round up
